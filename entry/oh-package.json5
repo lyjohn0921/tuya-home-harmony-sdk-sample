@@ -1,0 +1,25 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@thingsmart/userlib": "",
+    "@thingsmart/homelib": "",
+    "@thingsmart/activatorlib": "",
+    "@thingsmart/activator": "",
+    "@thingsmart/device": "",
+    "@thingsmart/ipcsdkhar": "",
+    "@thingsmart/thingp2psdkhar": "",
+    "@thingsmart/thingvideorenderersdk": "",
+    "@thingsmart/thingcamerasdk": "",
+    "@thingsmart/thingavloggersdk": "",
+    "@thingsmart/security": "",
+    "@thingsmart/channel": "",
+    "@thingsmart/util": "",
+    "@thingsmart/securitykv": "",
+    "@thingsmart/thinglogmodule": "",
+  }
+}

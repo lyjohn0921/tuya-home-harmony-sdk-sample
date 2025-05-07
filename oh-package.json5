@@ -1,0 +1,27 @@
+{
+  "modelVersion": "5.0.2",
+  "description": "Please describe the basic information.",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@ohos/hypium": "1.0.21",
+    "@ohos/hamock": "1.0.0"
+  },
+  "overrides": {
+    "@thingsmart/userlib": "file:./entry/src/main/libs/userlib-1.0.25.har",
+    "@thingsmart/homelib": "file:./entry/src/main/libs/homelib-0.0.35.har",
+    "@thingsmart/activatorlib": "file:./entry/src/main/libs/activatorlib-1.0.13.har",
+    "@thingsmart/activator": "file:./entry/src/main/libs/activator-1.0.22.har",
+    "@thingsmart/device": "file:./entry/src/main/libs/device-1.0.30.har",
+    "@thingsmart/ipcsdk": "file:./entry/src/main/libs/ipcsdkhar-1.0.21.har",
+    "@thingsmart/thingp2psdkhar": "file:./entry/src/main/libs/thingp2psdkhar-1.0.10.har",
+    "@thingsmart/thingvideorenderersdk": "file:./entry/src/main/libs/thingvideorenderersdk-1.0.1.har",
+    "@thingsmart/thingcamerasdk": "file:./entry/src/main/libs/thingcamerasdk-1.0.24.har",
+    "@thingsmart/thingavloggersdk": "file:./entry/src/main/libs/thingavloggersdk-1.0.3.har",
+    "@thingsmart/security": "file:./entry/src/main/libs/security-2.0.1.har",
+    "@thingsmart/channel": "file:./entry/src/main/libs/channel-1.0.26.har",
+    "@thingsmart/util": "file:./entry/src/main/libs/util-1.0.8.har",
+    "@thingsmart/securitykv": "file:./entry/src/main/libs/securitykv-1.0.4.har",
+    "@thingsmart/thinglogmodule": "file:./entry/src/main/libs/thinglogmodule-1.0.1.har"
+  }
+}

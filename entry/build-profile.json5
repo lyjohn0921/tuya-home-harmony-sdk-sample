@@ -1,0 +1,47 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+  },
+  "buildOptionSet": [
+    {
+      "name": "release",
+      "arkOptions": {
+        "runtimeOnly": {
+          "packages": [
+            "@thingsmart/userlib",
+            "@thingsmart/homelib",
+            "@thingsmart/activatorlib",
+            "@thingsmart/activator",
+            "@thingsmart/device",
+            "@thingsmart/ipcsdkhar",
+            "@thingsmart/thingp2psdkhar",
+            "@thingsmart/thingvideorenderersdk",
+            "@thingsmart/thingcamerasdk",
+            "@thingsmart/thingavloggersdk",
+            "@thingsmart/security",
+            "@thingsmart/channel",
+            "@thingsmart/util",
+            "@thingsmart/securitykv",
+            "@thingsmart/thinglogmodule"
+          ]
+        },
+        "obfuscation": {
+          "ruleOptions": {
+            "enable": false,
+            "files": [
+              "./obfuscation-rules.txt"
+            ]
+          }
+        }
+      }
+    },
+  ],
+  "targets": [
+    {
+      "name": "default"
+    },
+    {
+      "name": "ohosTest",
+    }
+  ]
+}
