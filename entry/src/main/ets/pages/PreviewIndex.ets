@@ -303,9 +303,9 @@ struct PreviewIndex {
         Button('设备能力')
           .width('30%')
           .onClick(async () => {
+            IPCLog.d(this.logTag, "设备能力");
             let cameraConfig = ThingIPCSdk.getCameraConfig(this.devId)
             cameraConfig.getSupportPlaySpeedList();
-            IPCLog.d(this.logTag, "设备能力");
           })
       }
 

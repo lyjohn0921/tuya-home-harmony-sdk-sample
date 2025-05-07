@@ -4,7 +4,4 @@
 - [设备配网](./tuya_sdk_integration) 
 - [设备管理](./tuya_sdk_integration)
 - [设备控制](./tuya_sdk_integration)
-- [视频直播](./tuya_ipc_live.md)
-- [音视频功能](./tuya_sdk_integration)
-- [SD 卡播放](./tuya_sdk_integration)
-- [IPC 设备控制](./tuya_sdk_integration)
+- [IPC SDK](./tuya_ipc_sdk.md)
