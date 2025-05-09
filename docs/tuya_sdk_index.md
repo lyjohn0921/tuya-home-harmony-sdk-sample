@@ -1,7 +1,7 @@
 - [SDK 集成](./tuya_sdk_integration)
 - [用户管理](./tuya_sdk_integration)
 - [家庭管理](./tuya_sdk_integration)
-- [设备配网](./tuya_sdk_integration) 
+- [设备配网](./tuya_sdk_activator.md) 
 - [设备管理](./tuya_sdk_device.md)
 - [设备控制](./tuya_sdk_device_ctrl.md)
 - [IPC SDK](./tuya_ipc_sdk.md)
