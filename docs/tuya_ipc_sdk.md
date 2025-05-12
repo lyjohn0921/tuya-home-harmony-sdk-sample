@@ -67,7 +67,7 @@ entry 模块 build-profile.json5 文件中 arkOptions 层级下添加如下配�
 ipcsdk 初始化可以尽量提前，在程序启动时执行
 
 ``` javascript
-ThingIPCSdk.init();
+ThingIPCSdk.init(this.context);
 ```
 ### p2p 初始化
 p2p 初始化，依赖登录完成和 mqtt的初始化完成。

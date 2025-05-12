@@ -1,4 +1,4 @@
-- [SDK 集成](./tuya_sdk_integration)
+- [SDK 集成](./tuya_sdk_integration.md)
 - [用户管理](./tuya_sdk_user.md)
 - [家庭管理](./tuya_sdk_homelib.md)
 - [设备配网](./tuya_sdk_activator.md) 
