@@ -24,12 +24,14 @@ import { MD5 } from '@thingsmart/util';
 // import { router } from '@kit.ArkUI';
 import { OnP2PCameraListener } from '@thingsmart/ipcsdkhar/src/main/ets/listener/OnP2PCameraListener';
 import router from '@ohos.router';
+import { StringUtil } from './StringUtil';
 
 @Entry
 @Component
 struct Index {
   @State message: string = 'Hello World';
   logTag: string = "index";
+  localConfig = StringUtil.getAppConfig(getContext(this));
 
   private thingCamera: ThingCameraInterface | undefined = undefined;
   onP2PCameraListener?: OnP2PCameraListener = undefined
@@ -97,10 +99,12 @@ struct Index {
         .onClick(async () => {
           IPCLog.d(this.logTag, '登录按钮被点击了')
           try {
+            let account = this.localConfig["test_login_account"];
+            let password = this.localConfig["test_login_password"];
             let resp = await TSmartUser.loginAccount({
-              account: '',
+              account: account,
               countryCode: '86',
-              password: '',
+              password: password,
               accountType: TSmartUserAccountType.PHONE
             })
             if (resp.success) {
@@ -130,7 +134,8 @@ struct Index {
           .width('30%')
           .onClick(async () => {
             IPCLog.d(this.logTag, 'getHomeDetail start')
-            let homeId = 0
+            let homeId : number= Number(this.localConfig["test_home_id"]);
+
             TSmartHome.getInstance(homeId).getHomeDetail((homeDetail: TSmartHomeBean) => {
               IPCLog.d(this.logTag, 'getHomeDetail callback' + homeDetail.homeName)
             })

@@ -14,12 +14,14 @@ import { ThingCameraAudioFrame, ThingCameraInterface, ThingCameraVideoFrame } fr
 import { OnP2PCameraListener } from '@thingsmart/ipcsdkhar/src/main/ets/listener/OnP2PCameraListener';
 import { TSmartAtopRequestError } from '@thingsmart/channel';
 import { TSmartUser } from '@thingsmart/userlib';
+import { StringUtil } from './StringUtil';
 
 @Entry
 @Component
 struct PreviewIndex {
   logTag: string = "Preview";
-  devId : string = ""
+  localConfig = StringUtil.getAppConfig(getContext(this));
+  devId : string = this.localConfig["test_dev_id"];
   cameraP2P = ThingIPCSdk.getCameraP2P(this.devId); //直播设备
   private xComponentContext0: XComponentContext | undefined = undefined;
   private thingCamera: ThingCameraInterface | undefined = undefined;
