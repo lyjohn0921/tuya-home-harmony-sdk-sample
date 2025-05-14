@@ -8,6 +8,10 @@ import { window } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { TSmartSDK } from '@thingsmart/channel';
 import { ThingIPCSdk } from '@thingsmart/ipcsdkhar';
+import {getReflectMetaInfo} from "../gensrc/thingReflectMetaInfo";
+import { bundleManager } from "@kit.AbilityKit";
+import { thingDynamicReflect } from "@thingsmart/dynamicreflect";
+import { ThingInitializer } from '@thingsmart/dynamicinitializer';
 
 const DOMAIN = 0x0000;
 const permissions: Array<Permissions> = ['ohos.permission.MICROPHONE','ohos.permission.WRITE_MEDIA','ohos.permission.READ_MEDIA'];
@@ -53,14 +57,25 @@ export default class EntryAbility extends UIAbility {
       }
       hilog.info(DOMAIN, 'testTag', 'Succeeded in loading the content.');
 
+
+      let bundleFlags = bundleManager.BundleFlag.GET_BUNDLE_INFO_WITH_APPLICATION;
+      let bundleInfo = bundleManager.getBundleInfoForSelfSync(bundleFlags);
+      // let thingDynamicReflect = getReflectMetaInfo(bundleInfo.name,"entry");
+
+      thingDynamicReflect.init(getReflectMetaInfo(bundleInfo.name,"entry"));//入口 hap 模块的名字
+
+      const initMetaInfo = thingDynamicReflect.filterMetaInfo(ThingInitializer.DEFAULT_GROUP);
+      if (initMetaInfo && initMetaInfo.size > 0) {
+        new ThingInitializer(initMetaInfo).execute(this.context);
+      }
+
       // let package = 'xxx'
-      // com.tuya.smart
       let appKey : string= '';
       let appSecret : string = '';
 
       PersistentStorage.persistProp('countryCode', '86')
       PersistentStorage.persistProp('regionCode', 'CN')
-      TSmartSDK.startWithAppKey(appKey, appSecret, this.context, "your bundle name")
+      TSmartSDK.startWithAppKey(appKey, appSecret, this.context, "")
 
       ThingIPCSdk.init(this.context);
 

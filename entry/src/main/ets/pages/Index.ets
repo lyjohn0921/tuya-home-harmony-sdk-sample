@@ -30,7 +30,6 @@ import router from '@ohos.router';
 struct Index {
   @State message: string = 'Hello World';
   logTag: string = "index";
-  // cameraP2P = ThingIPCSdk.getVirtualCameraP2P("vdevo174279581479913");
 
   private thingCamera: ThingCameraInterface | undefined = undefined;
   onP2PCameraListener?: OnP2PCameraListener = undefined

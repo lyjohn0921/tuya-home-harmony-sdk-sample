@@ -21,5 +21,11 @@
     "@thingsmart/util": "",
     "@thingsmart/securitykv": "",
     "@thingsmart/thinglogmodule": "",
+    "@thingsmart/dynamicstring": "",
+    "@thingsmart/mqtt": "",
+    "@thingsmart/xlog": "",
+    "@thingsmart/thingaudioenginsdkhar": "",
+    "@thingsmart/dynamicinitializer": "",
+    "@thingsmart/dynamicreflect": ""
   }
 }
