@@ -26,6 +26,7 @@
     "@thingsmart/xlog": "",
     "@thingsmart/thingaudioenginsdkhar": "",
     "@thingsmart/dynamicinitializer": "",
-    "@thingsmart/dynamicreflect": ""
+    "@thingsmart/dynamicreflect": "",
+    "@thingsmart/lan": ""
   }
 }
