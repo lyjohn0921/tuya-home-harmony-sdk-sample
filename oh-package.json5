@@ -29,6 +29,7 @@
     "@thingsmart/thingaudioenginsdkhar": "file:./entry/src/main/libs/thingaudioenginsdkhar-1.0.1.har",
     "@thingsmart/dynamicinitializer": "file:./entry/src/main/libs/dynamicinitializer-0.9.2.har",
     "@thingsmart/dynamicreflect": "file:./entry/src/main/libs/dynamicreflect-0.8.0.har",
-    "@thingsmart/lan": "file:./entry/src/main/libs/lan-1.0.3.har"
+    "@thingsmart/lan": "file:./entry/src/main/libs/lan-1.0.3.har",
+    "@thingsmart/ez": "file:./entry/src/main/libs/ez-1.0.0.har"
   }
 }

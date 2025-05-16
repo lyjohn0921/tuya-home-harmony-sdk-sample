@@ -29,7 +29,8 @@
             "@thingsmart/thingaudioenginsdkhar",
             "@thingsmart/dynamicinitializer",
             "@thingsmart/dynamicreflect",
-            "@thingsmart/lan"
+            "@thingsmart/lan",
+            "@thingsmart/ez"
           ]
         },
         "obfuscation": {
