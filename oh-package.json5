@@ -20,7 +20,7 @@
     "@thingsmart/thingavloggersdk": "file:./entry/src/main/libs/thingavloggersdk-1.0.3.har",
     "@thingsmart/security": "file:./entry/src/main/libs/security-2.0.1.har",
     "@thingsmart/channel": "file:./entry/src/main/libs/channel-1.0.26.har",
-    "@thingsmart/util": "file:./entry/src/main/libs/util-1.0.8.har",
+    "@thingsmart/util": "file:./entry/src/main/libs/util-1.0.9.har",
     "@thingsmart/securitykv": "file:./entry/src/main/libs/securitykv-1.0.4.har",
     "@thingsmart/thinglogmodule": "file:./entry/src/main/libs/thinglogmodule-1.0.1.har",
     "@thingsmart/dynamicstring": "file:./entry/src/main/libs/dynamicstring-1.0.3.har",
