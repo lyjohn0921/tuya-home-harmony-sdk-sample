@@ -15,7 +15,7 @@
     "@thingsmart/device": "file:./entry/src/main/libs/device-1.0.60.har",
     "@thingsmart/ipcsdkhar": "file:./entry/src/main/libs/ipcsdkhar-1.0.26.har",
     "@thingsmart/thingp2psdkhar": "file:./entry/src/main/libs/thingp2psdkhar-1.0.12.har",
-    "@thingsmart/thingvideorenderersdk": "file:./entry/src/main/libs/thingvideorenderersdk-1.0.1.har",
+    "@thingsmart/thingvideorenderersdk": "file:./entry/src/main/libs/thingvideorenderersdk-1.0.2.har",
     "@thingsmart/thingcamerasdk": "file:./entry/src/main/libs/thingcamerasdk-1.0.29.har",
     "@thingsmart/thingavloggersdk": "file:./entry/src/main/libs/thingavloggersdk-1.0.3.har",
     "@thingsmart/security": "file:./entry/src/main/libs/security-2.0.1.har",
