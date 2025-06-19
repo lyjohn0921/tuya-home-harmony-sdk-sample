@@ -6,18 +6,26 @@ ipcsdk 的使用，依赖登录、设备和网络模块。请在根目录的 oh-
     "@thingsmart/userlib": "file:./entry/src/main/libs/userlib-1.0.25.har",
     "@thingsmart/homelib": "file:./entry/src/main/libs/homelib-0.0.35.har",
     "@thingsmart/activatorlib": "file:./entry/src/main/libs/activatorlib-1.0.13.har",
-    "@thingsmart/activator": "file:./entry/src/main/libs/activator-1.0.22.har",
-    "@thingsmart/device": "file:./entry/src/main/libs/device-1.0.30.har",
-    "@thingsmart/ipcsdk": "file:./entry/src/main/libs/ipcsdkhar-1.0.21.har",
-    "@thingsmart/thingp2psdkhar": "file:./entry/src/main/libs/thingp2psdkhar-1.0.10.har",
-    "@thingsmart/thingvideorenderersdk": "file:./entry/src/main/libs/thingvideorenderersdk-1.0.1.har",
-    "@thingsmart/thingcamerasdk": "file:./entry/src/main/libs/thingcamerasdk-1.0.24.har",
+    "@thingsmart/activator": "file:./entry/src/main/libs/activator-1.0.23.har",
+    "@thingsmart/device": "file:./entry/src/main/libs/device-1.0.76.har",
+    "@thingsmart/ipcsdkhar": "file:./entry/src/main/libs/ipcsdkhar-1.0.28.har",
+    "@thingsmart/thingp2psdkhar": "file:./entry/src/main/libs/thingp2psdkhar-1.0.12.har",
+    "@thingsmart/thingvideorenderersdk": "file:./entry/src/main/libs/thingvideorenderersdk-1.0.2.har",
+    "@thingsmart/thingcamerasdk": "file:./entry/src/main/libs/thingcamerasdk-1.0.29.har",
     "@thingsmart/thingavloggersdk": "file:./entry/src/main/libs/thingavloggersdk-1.0.3.har",
     "@thingsmart/security": "file:./entry/src/main/libs/security-2.0.1.har",
-    "@thingsmart/channel": "file:./entry/src/main/libs/channel-1.0.26.har",
-    "@thingsmart/util": "file:./entry/src/main/libs/util-1.0.8.har",
+    "@thingsmart/channel": "file:./entry/src/main/libs/channel-1.0.30.har",
+    "@thingsmart/util": "file:./entry/src/main/libs/util-1.0.9.har",
     "@thingsmart/securitykv": "file:./entry/src/main/libs/securitykv-1.0.4.har",
-    "@thingsmart/thinglogmodule": "file:./entry/src/main/libs/thinglogmodule-1.0.1.har"
+    "@thingsmart/thinglogmodule": "file:./entry/src/main/libs/thinglogmodule-1.0.1.har",
+    "@thingsmart/dynamicstring": "file:./entry/src/main/libs/dynamicstring-1.0.3.har",
+    "@thingsmart/mqtt": "file:./entry/src/main/libs/mqtt-2.0.12.har",
+    "@thingsmart/xlog": "file:./entry/src/main/libs/xlog-1.0.0.har",
+    "@thingsmart/thingaudioenginsdkhar": "file:./entry/src/main/libs/thingaudioenginsdkhar-1.0.4.har",
+    "@thingsmart/dynamicinitializer": "file:./entry/src/main/libs/dynamicinitializer-0.9.2.har",
+    "@thingsmart/dynamicreflect": "file:./entry/src/main/libs/dynamicreflect-0.8.0.har",
+    "@thingsmart/lan": "file:./entry/src/main/libs/lan-1.0.3.har",
+    "@thingsmart/ez": "file:./entry/src/main/libs/ez-1.0.0.har"
 }
 ```
 entry 模块 oh-package.json5 文件中添加如下依赖（不需要版本号）。
@@ -38,7 +46,15 @@ entry 模块 oh-package.json5 文件中添加如下依赖（不需要版本号�
     "@thingsmart/util": "",
     "@thingsmart/securitykv": "",
     "@thingsmart/thinglogmodule": "",
-  }
+    "@thingsmart/dynamicstring": "",
+    "@thingsmart/mqtt": "",
+    "@thingsmart/xlog": "",
+    "@thingsmart/thingaudioenginsdkhar": "",
+    "@thingsmart/dynamicinitializer": "",
+    "@thingsmart/dynamicreflect": "",
+    "@thingsmart/lan": "",
+    "@thingsmart/ez": ""
+}
 ```
 entry 模块 build-profile.json5 文件中 arkOptions 层级下添加如下配置。
 ```json5
@@ -58,7 +74,15 @@ entry 模块 build-profile.json5 文件中 arkOptions 层级下添加如下配�
         "@thingsmart/channel",
         "@thingsmart/util",
         "@thingsmart/securitykv",
-        "@thingsmart/thinglogmodule"
+        "@thingsmart/thinglogmodule",
+        "@thingsmart/dynamicstring",
+        "@thingsmart/mqtt",
+        "@thingsmart/xlog",
+        "@thingsmart/thingaudioenginsdkhar",
+        "@thingsmart/dynamicinitializer",
+        "@thingsmart/dynamicreflect",
+        "@thingsmart/lan",
+        "@thingsmart/ez"
     ]
 },
 ```
