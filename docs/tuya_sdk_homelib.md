@@ -7,7 +7,7 @@ oh-package.json
 
 ```json
 "dependencies": {
-    "@thingsmart/homeLib": "^0.0.38",
+    "@thingsmart/homeLib": "^0.0.79",
     "@thingsmart/channel": "1.0.1",
     "@thingsmart/mqtt": "2.0.8",
     "@thingsmart/thinglogmodule": "^0.1.1",

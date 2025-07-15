@@ -4,7 +4,7 @@ ipcsdk 的使用，依赖登录、设备和网络模块。请在根目录的 oh-
 ```json5
 "overrides": {
     "@thingsmart/userlib": "file:./entry/src/main/libs/userlib-1.0.25.har",
-    "@thingsmart/homelib": "file:./entry/src/main/libs/homelib-0.0.35.har",
+    "@thingsmart/homelib": "file:./entry/src/main/libs/homelib-0.0.79.har",
     "@thingsmart/activatorlib": "file:./entry/src/main/libs/activatorlib-1.0.13.har",
     "@thingsmart/activator": "file:./entry/src/main/libs/activator-1.0.23.har",
     "@thingsmart/device": "file:./entry/src/main/libs/device-1.0.76.har",
